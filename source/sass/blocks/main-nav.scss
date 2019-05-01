@@ -1,0 +1,7 @@
+.main-nav__burger {
+  display: none;
+}
+
+.main-nav__list {
+ @include list-style;
+}
