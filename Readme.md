@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Andrey Zaikin](https://up.htmlacademy.ru/adaptive/16/user/808993).
-* Наставник: `Неизвестно`.
+* Наставник: [Ярослав Шевцов].
 
 ---
 
