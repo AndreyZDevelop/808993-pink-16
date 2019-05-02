@@ -1,0 +1,46 @@
+.photos__intro {
+  display: inline-block;
+  padding: 40px 55px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  font-weight: 400;
+
+  text-align: center;
+}
+
+.photos__list {
+  @include list-style;
+}
+
+.photos__item {
+  margin-bottom: 20px;
+
+  img {
+  width: 100%;
+}
+}
+
+.photos__wrapper {
+
+}
+
+.photos__content {
+  width: 280px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.photos__author {
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  font-weight: 700;
+}
+
+.photos__time {
+  font-size: 12px;
+  font-weight: 300;
+
+  text-transform: uppercase;
+}

@@ -1,15 +1,37 @@
 
-.features__title {
+
+.features__text {
+
   font-size: 24px;
   color: #283645;
-
+  text-align: center;
   font-weight: 300;
+
+  padding: 0 40px;
+
+  &--indent {
+    margin-bottom: 120px;
+  }
 }
 
 .features__list {
   @include list-style;
 
-  background-color: #f2f2f2;
+  padding: 0 30px;
+}
+
+.features__wrapper {
+  min-height: 784px;
+  background-image: url('../img/features-background.svg');
+  background-repeat: no-repeat;
+  background-position: 0% -80%;
+
+  margin-bottom: 43px;
+}
+
+
+.features__item {
+ margin-bottom: 40px;
 }
 
 .features__desc {
@@ -17,9 +39,8 @@
   line-height: 24px;
   font-weight: 700;
 
-  text-align: center;
-}
 
+}
 
 .features__description {
   line-height: 24px;
@@ -29,4 +50,9 @@
 .features__wrapper {
  padding-left: 20px;
  padding-right: 20px;
+}
+
+.features__phone {
+
+  margin-left: 55px;
 }

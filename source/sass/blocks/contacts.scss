@@ -1,0 +1,35 @@
+.contacts {
+position: relative;
+  text-align: center;
+
+  min-height: 610px;
+}
+
+.contacts__wrapper {
+  background-color: #ffffff;
+}
+
+.contacts__title {
+ font-size: 24px;
+ font-weight: 300;
+ color: #283645;
+}
+
+.contacts__caption {
+  font-size: 18px;
+  color: $nightblue;
+}
+
+.contacts__adress {
+  font-size: 24px;
+
+  color: #d22856;
+}
+
+.contacts__list {
+  @include list-style;
+}
+
+.contacts__map {
+  width: 320px;
+}
