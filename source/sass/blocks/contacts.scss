@@ -2,13 +2,25 @@
   position: relative;
   text-align: center;
   background-color: #ffffff;
-  min-height: 610px;
+  min-height: 395px;
+
+  background-image: url('../img/bg-triangle-white-footer.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
 }
 
 .contacts__title {
  font-size: 24px;
  font-weight: 300;
  color: #283645;
+}
+
+.contacts__map {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  z-index: -1;
 }
 
 @media (min-width: $tablet) {

@@ -1,46 +1,73 @@
 .subscription__wrapper {
-  border-collapse: collapse;
+  display: flex;
 
   margin: 0 auto;
 }
 
-.subscription__title {
-  width: 276px;
-  height: 94px;
+.subscription__list {
+  @include list-style;
+  overflow: hidden;
 
+  &--position {
+    margin-top: 75px;
+  }
+}
+
+.subscription__name {
+  border-bottom: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  padding: 12.5px;
+  padding-right: 27px;
+}
+
+.subscription__name:nth-child(1) {
+  border-top: 2px solid #e5e5e5;
+}
+
+.subscription__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 158px;
+  height: 75px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #283645;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  border-right: 2px solid #e5e5e5;
+
+  padding-top: 19px;
+  padding-bottom: 13px;
+
+}
+
+.subscription__price {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: $nightblue;
+
+  font-weight: 300;
 }
 
-.subscription__item {
-
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 124px;
-  border: 2px solid #e5e5e5;
-
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-
+.subscription__function {
+  font-size: 0px;
+  padding: 13px 61px;
+  border-bottom: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  padding: 24px 24px;
 
   &--check {
-  background-image: url('../img/icon-yes.svg');
-  background-repeat: no-repeat;
-  background-size: 31px 21px;
-  background-position: 235px 20px;
-
-}
-  &--miss {
-  background-image: url('../img/icon-no.svg');
-  background-repeat: no-repeat;
-  background-size: 27px 26px;
-  background-position: 235px 20px;
-}
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 31px 21px;
   }
+
+  &--miss {
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+

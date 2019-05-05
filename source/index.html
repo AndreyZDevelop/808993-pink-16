@@ -103,7 +103,7 @@
               <div class="reviews__list benefit">
 
                 <div class="benefit__image">
-                  <span class="benefit__image--number">24</span>
+                  <span class="benefit__image-number">24</span>
                 </div>
 
                 <div class="benefit__item">
@@ -130,23 +130,37 @@
 
     <section class="subscription">
       <div class="container">
-        <table class="subscription__wrapper">
-          <tr>
-            <th class="subscription__title">База</th>
-            <th class="subscription__title subscription__title--hit">Стандарт 3,99 USD</th>
-            <th class="subscription__title">Анлим</th>
-          </tr>
-          <tr>
-            <td class="subscription__item subscription__item--check">Розовый фильтр</td>
-          </tr>
-          <tr>
-            <td class="subscription__item subscription__item--check">Смайлики</td>
-          </tr>
-          <tr>
-            <td class="subscription__item subscription__item--miss">Комментарии</td>
-          </tr>
-        </table>
-      </div>
+        <div class="subscription__wrapper">
+
+        <ul class="subscription__list subscription__list--position">
+          <li class="subscription__name">Розовый фильтр</li>
+          <li class="subscription__name">Смайлики</li>
+          <li class="subscription__name">Комментарии</li>
+        </ul>
+
+        <ul class="subscription__list">
+          <li class="subscription__title">База <span class="subscription__price">1,99 usd</span></li>
+          <li class="subscription__function subscription__function--check">yes</li>
+          <li class="subscription__function subscription__function--miss">no</li>
+          <li class="subscription__function subscription__function--miss">no</li>
+        </ul>
+
+        <ul class="subscription__list">
+          <li class="subscription__title">Стандарт <span class="subscription__price">3,99 usd</span></li>
+          <li class="subscription__function subscription__function--check">yes</li>
+          <li class="subscription__function subscription__function--check">yes</li>
+          <li class="subscription__function subscription__function--miss">no</li>
+        </ul>
+
+        <ul class="subscription__list">
+          <li class="subscription__title">Анлим <span class="subscription__price">9,99 usd</span></li>
+          <li class="subscription__function subscription__function--check">yes</li>
+          <li class="subscription__function subscription__function--check">yes</li>
+          <li class="subscription__function subscription__function--check">yes</li>
+        </ul>
+
+        </div>
+        </div>
     </section>
 
     <section class="contacts">

@@ -1,7 +1,6 @@
 
 
 .features__text {
-
   font-size: 24px;
   color: #283645;
   text-align: center;
@@ -48,7 +47,7 @@
   min-height: 784px;
   background-image: url('../img/features-background.svg');
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center;
   background-size: cover;
   padding-top: 100px;
   margin-top: -143px;
@@ -148,28 +147,4 @@
   }
 }
 
-
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/opensansbold.woff2") format("woff2");
-  src: url("../fonts/opensansbold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 300;
-  font-style: normal;
-  src: url("../fonts/opensanslight.woff2") format("woff2");
-  src: url("../fonts/opensanslight.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/opensans.woff2") format("woff2");
-  src: url("../fonts/opensans.woff") format("woff");
-}
 

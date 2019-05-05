@@ -47,6 +47,13 @@
   margin-right: 18px;
 }
 
+.page-footer__copyright {
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+  font-weight: 400;
+}
+
 @media (min-width: $tablet) {
 .page-footer__copyright {
   display: block;

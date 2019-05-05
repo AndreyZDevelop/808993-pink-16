@@ -21,7 +21,6 @@
 
 
   margin: 0;
-  padding: 0 20px;
 
 }
 
@@ -39,29 +38,36 @@
 }
 
 .benefit__image {
-  width: 202px;
-  height: 202px;
-  border: 14px solid green;
-  border-radius: 100%;
-  padding-right: 136px;
-  padding-left: 66px;
+  width: 238px;
+  height: 276px;
 
-  margin-right: 136px;
+  flex-shrink: 0;
+  margin-right: 130px;
 
-  &--number {
-    display: inline-block;
-    font-size: 100px;
-    line-height: 150px;
+
+  background: url("../img/icon-timer.svg") no-repeat center / contain;
+
+  &-number {
+    display: block;
     width: 202px;
     height: 202px;
-
+    font-size: 100px;
+    line-height: 148px;
+    color: #d22856;
+    border: 14px solid #d22856;
+    border-radius: 100%;
+    text-align: center;
+    margin-top: 55px;
+    margin-left: 19px;
   }
-
-
 }
 
+
 .benefit__text {
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+
 }
 
 .benefit__link {
