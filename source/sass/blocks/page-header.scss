@@ -1,15 +1,29 @@
 .page-header {
-
+    padding-top: 22px;
+    background-color: $nightblue;
 }
 
 .page-header__logo {
-  display: inline-block;
-  margin: 0;
+  display: block;
   width: 74px;
-  height: 23px;
+
+
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
-.page-header__wrapper {
-  background-color: $nightblue;
+@media (min-width: $desktop) {
+  .page-header__logo {
+    padding-top: 20px;
 
+    margin-left: 130px;
+    margin-right: 150px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header__wrapper {
+    display: flex;
+    padding-bottom: 20px;
+  }
 }

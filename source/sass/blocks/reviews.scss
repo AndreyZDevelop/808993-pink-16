@@ -1,32 +1,79 @@
 .reviews__list {
   @include list-style;
+
+  margin-bottom: 25px;
 }
 
 .reviews__author {
+  display: block;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
   font-weight: 700;
+
+  margin-bottom: 25px;
 }
 
 .reviews__text {
-  font-size: 14px;
+  display: block;
+  font-size: 18px;
   line-height: 30px;
+
+
+  margin: 0;
+  padding: 0 20px;
+
 }
 
 .reviews__toggles {
   display: none;
 }
 
-.subscription__title {
-  width: 276px;
-  height: 94px;
-  background-color: $nightblue;
-  color: white;
-  text-transform: uppercase;
-  border: 2px solid #283645;
+.benefit {
+  display: none;
 }
 
-.subscription__item {
+.benefit__title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.benefit__image {
+  width: 202px;
+  height: 202px;
+  border: 14px solid green;
+  border-radius: 100%;
+  padding-right: 136px;
+  padding-left: 66px;
+
+  margin-right: 136px;
+
+  &--number {
+    display: inline-block;
+    font-size: 100px;
+    line-height: 150px;
+    width: 202px;
+    height: 202px;
+
+  }
+
 
 }
+
+.benefit__text {
+  line-height: 24px;
+}
+
+.benefit__link {
+  color: #d22856;
+  text-decoration: underline;
+}
+
+@media (min-width: $tablet) {
+  .benefit {
+    display: flex;
+
+    padding: 0 20px;
+  }
+}
+

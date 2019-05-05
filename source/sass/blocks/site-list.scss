@@ -16,4 +16,27 @@
     text-decoration: none;
   }
 
+  a:hover,
+  a:focus {
+    color: #d22856;
+  }
+
+  a:active {
+    color: #5a3149;
+  }
+
+}
+
+@media (min-width: $desktop) {
+  .site-list {
+    display: flex;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .site-list__item {
+    padding-right: 82px;
+    border: none;
+}
 }

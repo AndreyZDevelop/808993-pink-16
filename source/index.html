@@ -27,7 +27,7 @@
             </li>
 
             <li class="site-list__item">
-              <a href="bonus.html">Конкурс</a>
+              <a href="form.html">Конкурс</a>
             </li>
 
             <li class="site-list__item">
@@ -40,8 +40,8 @@
   </header>
 
   <main class="page-main">
-    <div class="container">
-      <section class="present">
+    <section class="present">
+      <div class="container">
         <div class="present__wrapper">
           <div class="present__content">
             <h1 class="present__title">Взгляните на жизнь иначе</h1>
@@ -62,10 +62,12 @@
             <p class="present__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="features">
 
+    <section class="features">
+      <div class="container">
         <p class="features__text">Устали от серости мегаполиса?</p>
         <p class="features__text features__text--indent">Нам есть, что вам предложить</p>
 
@@ -89,12 +91,30 @@
           <img class="features__phone" src="img/iphone-screen-3-mobile@1x.png" width="157" height="320" alt="">
 
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="reviews">
+    <section class="reviews">
+      <div class="container">
         <div class="reviews__wrapper slider">
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
+
+              <div class="reviews__list benefit">
+
+                <div class="benefit__image">
+                  <span class="benefit__image--number">24</span>
+                </div>
+
+                <div class="benefit__item">
+                  <h3 class="benefit__title">Эффект на 24 часа!</h3>
+                  <p class="benefit__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                  <a class="benefit__link" href="#">Узнать больше об исследовании</a>
+                </div>
+              </div>
+
+
+
               <cite class="reviews__author">Николай Петров</cite>
               <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
             </li>
@@ -105,12 +125,16 @@
             <button class="slider__toggle" type="button">3</button>
           </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="subscription">
-        <table>
+    <section class="subscription">
+      <div class="container">
+        <table class="subscription__wrapper">
           <tr>
+            <th class="subscription__title">База</th>
             <th class="subscription__title subscription__title--hit">Стандарт 3,99 USD</th>
+            <th class="subscription__title">Анлим</th>
           </tr>
           <tr>
             <td class="subscription__item subscription__item--check">Розовый фильтр</td>
@@ -122,34 +146,40 @@
             <td class="subscription__item subscription__item--miss">Комментарии</td>
           </tr>
         </table>
-      </section>
+      </div>
+    </section>
 
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+    <section class="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
 
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <h3 class="contacts__caption">Звоните:</h3>
-              <p class="contacts__adress">+7 (812) 555-66-66</p>
-            </li>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__caption">Звоните:</h3>
+            <p class="contacts__adress">+7 (812) 555-66-66</p>
+          </li>
 
-            <li class="contacts__item">
-              <h3 class="contacts__caption">Пишите:</h3>
-              <p class="contacts__adress">mail@htmlacademy.ru</p>
-            </li>
+          <li class="contacts__item">
+            <h3 class="contacts__caption">Пишите:</h3>
+            <p class="contacts__adress">mail@htmlacademy.ru</p>
+          </li>
 
-            <li class="contacts__item">
-              <h3 class="contacts__caption">Приезжайте в гости:</h3>
-              <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
-            </li>
-          </ul>
-        </div>
+          <li class="contacts__item">
+            <h3 class="contacts__caption">Приезжайте в гости:</h3>
+            <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
 
-        <img class="contacts__map contacts__map--point" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="ул. Большая Конюшенная, 19/8">
-      </section>
+
+      <img class="contacts__map contacts__map--point" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="ул. Большая Конюшенная, 19/8">
     </div>
-  </main>
+  </section>
+
+
+  <script>
+
+  </script>
+</main>
 
 </body>
 </html>

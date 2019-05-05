@@ -1,0 +1,46 @@
+.subscription__wrapper {
+  border-collapse: collapse;
+
+  margin: 0 auto;
+}
+
+.subscription__title {
+  width: 276px;
+  height: 94px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $nightblue;
+}
+
+.subscription__item {
+
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 124px;
+  border: 2px solid #e5e5e5;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+
+  &--check {
+  background-image: url('../img/icon-yes.svg');
+  background-repeat: no-repeat;
+  background-size: 31px 21px;
+  background-position: 235px 20px;
+
+}
+  &--miss {
+  background-image: url('../img/icon-no.svg');
+  background-repeat: no-repeat;
+  background-size: 27px 26px;
+  background-position: 235px 20px;
+}
+  }
