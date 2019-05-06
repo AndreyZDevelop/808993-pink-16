@@ -1,19 +1,22 @@
 .subscription__wrapper {
   display: flex;
-
+  justify-content: center;
   margin: 0 auto;
 }
 
 .subscription__list {
+  width: 280px;
+
   @include list-style;
   overflow: hidden;
-
+  flex-shrink: 0;
   &--position {
     margin-top: 75px;
   }
 }
 
 .subscription__name {
+  display: none;
   border-bottom: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
   border-left: 2px solid #e5e5e5;
@@ -29,7 +32,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 158px;
+  width: 100%;
   height: 75px;
   font-weight: 700;
   color: #ffffff;
