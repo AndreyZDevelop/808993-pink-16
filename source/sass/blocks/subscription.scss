@@ -1,7 +1,36 @@
+.subscription {
+  overflow: hidden;
+}
+
+@media (min-width: $desktop) {
+  .subscription {
+    padding-top: 50px;
+
+    background-image: url('../img/features-background.svg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .subscription__wrapper {
   display: flex;
-  justify-content: center;
   margin: 0 auto;
+  justify-content: center;
+  transform: translateX(-140px);
+}
+
+@media (min-width: $tablet) {
+  .subscription__wrapper {
+    justify-content: flex-start;
+    transform: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .subscription__wrapper {
+    padding-left: 150px;
+  }
 }
 
 .subscription__list {
@@ -15,6 +44,18 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .subscription__list {
+    width: 156px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .subscription__list {
+    width: 237px;
+  }
+}
+
 .subscription__name {
   display: none;
   border-bottom: 2px solid #e5e5e5;
@@ -22,6 +63,13 @@
   border-left: 2px solid #e5e5e5;
   padding: 12.5px;
   padding-right: 27px;
+}
+
+@media (min-width: $tablet) {
+  .subscription__name {
+    display: block;
+    white-space: nowrap;
+  }
 }
 
 .subscription__name:nth-child(1) {
