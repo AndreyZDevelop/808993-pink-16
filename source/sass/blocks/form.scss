@@ -4,6 +4,10 @@
   padding-bottom: 64px;
 }
 
+.form__page {
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet) {
 .form__page {
   display: flex;
@@ -44,7 +48,7 @@
   font-weight: 400;
   line-height: 30px;
   color: #d22856;
-  
+
   text-align: center;
   text-transform: uppercase;
 
@@ -77,7 +81,7 @@
 
 @media (min-width: $tablet) {
   .form__text {
-    
+
 
     &--surname {
       width: 521px;
@@ -95,7 +99,7 @@
 
 @media (min-width: $desktop) {
   .form__text {
-    
+
 
     &--surname {
       width: 336px;
@@ -143,7 +147,7 @@
       position: absolute;
       width: 40px;
       height: 40px;
-      
+
       border: 2px solid red;
     }
   }
@@ -190,7 +194,7 @@
 }
 
 
-@media (min-width: $tablet) {  
+@media (min-width: $tablet) {
 .form__reverse {
   display: flex;
   flex-direction: column-reverse;
