@@ -1,0 +1,195 @@
+.features {
+  min-height: 784px;
+  background-image: url('../img/features-background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 80px;
+
+  margin-bottom: 50px;
+}
+
+@media (min-width: $tablet) {
+  .features {
+    background-position: 0px 250px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features {
+    background-position: 0px 240px;
+
+    margin: 0;
+  }
+}
+
+.features__text {
+  font-size: 24px;
+  color: #283645;
+  text-align: center;
+  font-weight: 300;
+
+  padding: 0 40px;
+
+  &--indent {
+    margin-bottom: 120px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .features__text {
+    font-size: 40px;
+
+    padding: 0 57px;
+    margin: 0;
+
+    &--indent {
+      padding: 0 163px;
+      margin-bottom: 126px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__text {
+    padding: 0 230px;
+
+   &--indent {
+      padding: 0 390px;
+      margin-bottom: 70px;
+   }
+  }
+}
+
+.features__list {
+  @include list-style;
+
+}
+
+.features__wrapper {
+
+}
+
+@media (min-width: $tablet) {
+  .features__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 480px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__wrapper {
+    min-height: 600px;
+  }
+}
+
+.features__item {
+ margin-bottom: 40px;
+}
+
+.features__desc {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .features__desc {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__desc {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+
+    padding: 0 40px;
+  }
+}
+
+.features__description {
+  text-align: center;
+  line-height: 24px;
+}
+
+
+@media (min-width: $tablet) {
+  .features__description {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__description {
+    text-align: center;
+    padding: 0 65px;
+  }
+}
+
+
+.features__wrapper {
+ padding-left: 20px;
+ padding-right: 20px;
+}
+
+.features__phone {
+  display: block;
+
+  margin: 0 auto;
+}
+
+@media (min-height: $tablet) {
+  .features__phone {
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__list {
+
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__item {
+    padding-top: 370px;
+
+    &--mood {
+      background-image: url('../img/iphone-screen-1-desktop@1x.png');
+      background-repeat: no-repeat;
+      background-position: 50% 10%;
+    }
+
+    &--world {
+      background-image: url('../img/iphone-screen-2-desktop@1x.png');
+      background-repeat: no-repeat;
+      background-position: 50% 10%;
+    }
+
+    &--friend {
+      background-image: url('../img/iphone-screen-3-desktop@1x.png');
+      background-repeat: no-repeat;
+      background-position: 50% 10%;
+    }
+  }
+}
+
+
+
+@media (min-width: $desktop) {
+  .features__phone {
+    display: none;
+  }
+}
+
+

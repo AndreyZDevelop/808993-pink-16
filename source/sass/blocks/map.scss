@@ -1,0 +1,55 @@
+.map {
+
+ &::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 45px;
+
+
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+}
+
+.map__iframe {
+
+
+}
+
+@media (min-width: $tablet) {
+  .map {
+
+    &::before {
+      height: 70px;
+    }
+  }
+
+}
+
+@media (min-width: $desktop) {
+  .map {
+
+    &::before {
+      height: 123px;
+    }
+  }
+
+}
+
+
+
+@media (min-width: $tablet) {
+ .map__iframe {
+  height: 370px;
+ }
+}
+
+@media (min-width: $desktop) {
+ .map__iframe {
+  height: 505px;
+ }
+}
+

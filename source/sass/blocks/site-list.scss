@@ -1,0 +1,42 @@
+
+.site-list__item {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid rgba(72, 84, 97, 0.99);
+  text-transform: uppercase;
+
+  a {
+    color: white;
+
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    color: #d22856;
+  }
+
+  a:active {
+    color: #5a3149;
+  }
+
+}
+
+@media (min-width: $desktop) {
+  .site-list {
+    display: flex;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .site-list__item {
+    padding-right: 82px;
+    border: none;
+}
+}

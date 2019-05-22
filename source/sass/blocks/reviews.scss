@@ -1,0 +1,154 @@
+@media (min-width: $desktop) {
+  .reviews {
+    background-color: #f2f2f2;
+  }
+}
+
+.reviews__list {
+  @include list-style;
+
+  margin-bottom: 25px;
+}
+
+.reviews__author {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.reviews__job {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .reviews__job {
+    display: block;
+    font-family: "Open Sans";
+    text-align: center;
+
+    order: -1;
+  }
+}
+
+@media (min-width: $tablet) {
+  .reviews__column {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.reviews__text {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .reviews__text {
+    margin-bottom: 51px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .reviews__text {
+  position: relative;
+  padding: 0 240px;
+  padding-top: 190px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 63px;
+
+    background-image: url("../img/icon-quotes.svg");
+    top: 50px;
+    left: 50%;
+  }
+  }
+}
+
+.reviews__toggles {
+  display: none;
+}
+
+.benefit {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .benefit {
+    display: flex;
+
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .benefit {
+    background-color: #f2f2f2;
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .benefit__item {
+    margin-top: 80px;
+  }
+}
+
+.benefit__title {
+  font-size: 30px;
+  line-height: 36px;
+
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.benefit__image {
+  width: 238px;
+  height: 276px;
+
+  flex-shrink: 0;
+  margin-right: 130px;
+
+
+  background: url("../img/icon-timer.svg") no-repeat center / contain;
+
+  &-number {
+    display: block;
+    width: 202px;
+    height: 202px;
+    font-size: 100px;
+    line-height: 148px;
+    color: #d22856;
+    border: 14px solid #d22856;
+    border-radius: 100%;
+    text-align: center;
+    margin-top: 55px;
+    margin-left: 19px;
+  }
+}
+
+
+.benefit__text {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+
+  margin: 0;
+  margin-bottom: 25px;
+
+}
+
+.benefit__link {
+  color: #d22856;
+  text-decoration: underline;
+}
