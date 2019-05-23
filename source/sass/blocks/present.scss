@@ -1,27 +1,40 @@
 .present {
-  background-color: #1d2631;
+  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
 
 }
 
 .present__wrapper {
-   position: relative;
-  min-height: 695px;
-  background-image: url('../img/bg-back-mobile@1x.jpg');
-  background-repeat: no-repeat;
-  background-position: 50% -30%;
+ position: relative;
+ min-height: 695px;
 
-  margin-bottom: 45px;
+ background-repeat: no-repeat;
+ background-position: 50% -30%;
 
-  &::after {
-    content: "";
-    position: absolute;
+ margin-bottom: 45px;
 
-    width: 258px;
-    height: 286px;
+ &::after {
+  content: "";
+  position: absolute;
 
-    background-image: url('../img/iphone-hand-mobile@1x.png');
-    top: 115px;
+  width: 258px;
+  height: 286px;
 
+  background-image: url('../img/iphone-hand-mobile@1x.png');
+  top: 115px;
+
+}
+}
+
+
+@media (min-width: $tablet) {
+  .present {
+    min-height: 700px;
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-size: cover;
+    background-position: 50% -80%;
   }
 }
 
@@ -30,7 +43,6 @@
   .present__wrapper {
     position: relative;
     min-height: 615px;
-    background-image: url('../img/bg-back-tablet@1x.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
 
@@ -44,7 +56,7 @@
       height: 545px;
 
       background-image: url('../img/iphone-hand-tablet@1x.png');
-      top: 70px;
+      top: 155px;
       right: -20px;
 
     }
@@ -53,12 +65,18 @@
 }
 
 @media (min-width: $desktop) {
+  .present {
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+    background-size: cover;
+    background-position: 50% -80%;
+  }
+}
+
+@media (min-width: $desktop) {
   .present__wrapper {
     position: relative;
     min-height: 850px;
-    background-image: url('../img/bg-back-desktop@1x.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
+    left: 50px;
 
     margin-bottom: 45px;
 
@@ -98,7 +116,6 @@
   padding-right: 20px;
   position: relative;
   top: 400px;
-
 }
 
 @media (min-width: $tablet) {
@@ -109,20 +126,24 @@
     padding-right: 20px;
     position: relative;
 
-    top: 200px;
+    top: 140px;
+    left: 35px;
     z-index: 100;
   }
 }
 
 @media (min-width: $desktop) {
   .present__content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     max-width: 290px;
     background-color: none;
     padding-left: 20px;
     padding-right: 20px;
     position: relative;
     right: -100px;
-    top: 200px;
+    top: 150px;
     z-index: 100;
   }
 }
@@ -137,7 +158,7 @@
   &--active {
     display: block;
     padding: 0 76px;
-    padding-top: 35px;
+    padding-top: 80px;
     text-align: center;
     margin: 0;
   }
@@ -146,8 +167,9 @@
 @media (min-width: $tablet) {
   .present__title {
     display: block;
-
+    font-size: 40px;
     text-align: center;
+    padding: 10px;
     margin: 0;
 
     &--active {
@@ -164,6 +186,7 @@
     font-size: 55px;
     text-align: center;
     margin: 0;
+    padding: 0;
     margin-bottom: 60px;
 
     font-weight: 300;
@@ -173,7 +196,7 @@
 
 .present__button {
   display: inline-block;
-  width: 281px;
+  width: 300px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -182,7 +205,7 @@
   margin-bottom: 40px;
   border: 3px solid #ffffff;
   border-radius: 45px;
-  background-color: #1d2631;
+
   text-decoration: none;
   text-align: center;
 
@@ -200,6 +223,7 @@
     background-color: #ffffff;
   }
 }
+
 
 @media (min-width: $desktop) {
   .present__button {

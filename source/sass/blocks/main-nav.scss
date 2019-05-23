@@ -1,6 +1,20 @@
 .main-nav {
-
+  display: none;
 }
+
+@media (min-width: $tablet) {
+  .main-nav {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav {
+    display: block;
+  }
+}
+
+
 
 .main-nav__burger {
   display: none;

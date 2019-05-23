@@ -1,12 +1,13 @@
 .page-header {
     padding-top: 22px;
-    background-color: $nightblue;
+    background-color: rgba(1,1,1,0.3);
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .page-header__logo {
   display: block;
-  width: 74px;
-
 
   padding-left: 20px;
   padding-bottom: 20px;

@@ -1,15 +1,16 @@
 .subscription {
+
+  background-image: url('../img/features-background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 100px;
   overflow: hidden;
 }
 
 @media (min-width: $desktop) {
   .subscription {
-    padding-top: 50px;
-
-    background-image: url('../img/features-background.svg');
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding-top: 200px;
   }
 }
 
@@ -121,4 +122,3 @@
     background-position: 50% 50%;
   }
 }
-
