@@ -10,6 +10,20 @@
  align-items: center;
 }
 
+@media (min-width: $tablet) {
+   .post__form {
+  display: flex;
+  flex-direction: row;
+}
+}
+
+@media (min-width: $tablet) {
+   .form__column:nth-child(1) {
+  margin-right: 100px;
+}
+}
+
+
 .post__photo {
   padding-bottom: 42px;
 }
@@ -17,6 +31,19 @@
 .post__list {
   display: flex;
   @include list-style;
+}
+
+@media (min-width: $tablet) {
+  .post__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $tablet) {
+  .post__item {
+    display: flex;
+  }
 }
 
 .post__check {
@@ -35,6 +62,24 @@
 .range__filter {
   width: 240px;
   margin-top: 20px;
+
+  &--tablet {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .range__filter {
+    margin-top: 0;
+
+  &--mobile {
+    display: none;
+  }
+
+    &--tablet {
+      display: block;
+    }
+  }
 }
 
 .range__controls {
@@ -53,7 +98,7 @@
   background-color: #000000;
 }
 
-.range__controls .toggle {
+.toggle {
   position: absolute;
   top: 29px;
   left: 70%;
@@ -64,6 +109,19 @@
   border: 3px solid #d22856;
   background-color: #ffffff;
   border-radius: 50%;
+}
+
+@media (min-width: $tablet) {
+  .toggle {
+
+    &--fill {
+    left: 15%;
+  }
+
+  &--contrast {
+    left: 50%;
+  }
+  }
 }
 
 .post__button {

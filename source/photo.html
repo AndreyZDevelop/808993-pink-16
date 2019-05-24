@@ -10,7 +10,12 @@
   <div class="container">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/pink-logo-mobile.svg" width="74" height="23" alt="Pink">
+        <picture>
+            <source media="(min-width: 1350px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 750px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/pink-logo-mobile.svg" alt="Pink">
+
+        </picture>
       </a>
 
       <nav class="main-nav">
@@ -139,13 +144,27 @@
 <section class="post">
   <div class="container">
     <form class="post__form" action="https://echo.htmlacademy.ru" method="post">
-      <img class="post__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Зима">
 
+
+      <div class="form__column">
+      <img class="post__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Зима">
+    </div>
+    <div class="form__double">
+      <div class="form__column">
       <ul class="post__list">
         <li class="post__item">
           <button class="post__check" type="button">
             <img src="img/icon-editor-crop.svg" width="48" height="48" alt="Мастшабирование">
           </button>
+
+          <div class="range__filter range__filter--tablet">
+            <div class="range__controls">
+              <div class="scale">
+
+              </div>
+              <div class="toggle"></div>
+            </div>
+          </div>
             </li>
 
 
@@ -153,16 +172,34 @@
               <button class="post__check" type="button">
               <img src="img/icon-editor-fill.svg" width="48" height="48" alt="Заливка">
             </button>
+
+            <div class="range__filter range__filter--tablet">
+            <div class="range__controls">
+              <div class="scale">
+
+              </div>
+              <div class="toggle toggle--fill"></div>
+            </div>
+          </div>
             </li>
 
             <li class="post__item post__item--position">
               <button class="post__check" type="button">
               <img src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контрастность">
             </button>
+
+            <div class="range__filter range__filter--tablet">
+            <div class="range__controls">
+              <div class="scale">
+
+              </div>
+              <div class="toggle toggle--contrast"></div>
+            </div>
+          </div>
             </li>
           </ul>
 
-          <div class="range__filter">
+          <div class="range__filter range__filter--mobile">
             <div class="range__controls">
               <div class="scale">
 
@@ -173,6 +210,8 @@
 
           <button class="post__button" type="button">Запостить</button>
           <button class="post__button post__button--disabled" type="button">Отмена</button>
+        </div>
+      </div>
         </form>
       </div>
     </section>
